@@ -1,0 +1,30 @@
+name: ai_birdie_image
+description: AI-Birdie Image Classification
+version: 1.0.0
+author: Smit Jivani
+homepage: smitjivani.dev
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^0.12.1
+  googleapis: ^0.55.0
+  googleapis_auth: ^0.2.11+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.smitjivani.aibirdieimage
+        pluginClass: AIBirdieImagePlugin
+      ios:
+        pluginClass: AIBirdieImagePlugin
