@@ -21,11 +21,11 @@ class ClassifierEfficientNetB4(activity: Activity, device: Device, numThreads: I
 
 
     override fun getModelPath(): String? {
-        return "model-ENB4.tflite"
+        return "model_lite_24.tflite"
     }
 
     override fun getLabelPath(): String? {
-        return "labels-ENB4.txt"
+        return "labels_lite_24.txt"
     }
 
     override fun getPreprocessNormalizeOp(): TensorOperator? {
